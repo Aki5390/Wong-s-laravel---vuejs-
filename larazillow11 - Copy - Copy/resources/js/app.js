@@ -4,6 +4,8 @@ import { createInertiaApp } from '@inertiajs/vue3'
 import MainLayout from '@/Layouts/MainLayout.vue'
 //import { ZiggyVue } from 'ziggy'
 import { ZiggyVue } from 'ziggy';
+import '../css/app.css'
+
 createInertiaApp({
   resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
